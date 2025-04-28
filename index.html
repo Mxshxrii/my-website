@@ -1,0 +1,116 @@
+<!-- Name: Meshari Alabdulla - 202002561 - Web Authoring 2 Assignment 1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Empowering health from the inside out with practical, approachable wellness services.">
+    <meta name="keywords" content="wellness, health, nutrition, lifestyle, VitalBloom Wellness">
+    <title>VitalBloom Wellness</title>
+    <!--favicon-->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <!--external files-->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <img src="images/logo.png" alt="VitalBloom Wellness logo" class="logo">
+        <h1>VitalBloom Wellness</h1>
+        <p class="tagline">Empowering health from the inside out.</p>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--about-->
+        <section id="about">
+            <h2>About Us</h2>
+            <div class="columns">
+                <p>We believe staying healthy starts by understanding yourself and slowly building better habits that stick. You don’t need to do everything at once — just get started and go from there.</p>
+                <p>Whether it's eating better, sleeping well, or managing stress, our goal is to help you make changes that feel realistic and personal.</p>
+            </div>
+
+            <details>
+                <summary>Our Approach</summary>
+                <p>We suggest ideas that actually work for real life. From simple food tips to relaxing routines, it’s all about finding what works for you, at your own pace.</p>
+            </details>
+        </section>
+
+        <!--media-->
+        <section id="media">
+            <h2>Watch & Listen</h2>
+
+            <!--vdeo-->
+            <video controls width="300">
+                <source src="video/woman-looking-at-sky.mov" type="video/mp4">
+                Your browser doesn’t support this video format.
+            </video>
+
+            <!--adio -->
+            <audio controls>
+                <source src="audio/testimony.mp3" type="audio/mp3">
+                Your browser doesn’t support this audio format.
+            </audio>
+
+            <!--visual-->
+            <figure>
+                <img src="images/woman-picking.jpg" alt="Woman shopping for fresh fruit at a local market">
+                <figcaption>Everyday choices like this can create meaningful change in your health journey.</figcaption>
+            </figure>
+        </section>
+
+        <!--quiz-->
+        <section id="quiz">
+            <h2>Quick Wellness Quiz</h2>
+            <p>Here’s a quick question to test your health knowledge:</p>
+
+            <form id="quizForm">
+                <label for="q1">Which of the following is a benefit of staying properly hydrated?</label><br><br>
+                <select id="q1" name="q1" required>
+                    <option value="">Choose one</option>
+                    <option value="wrong">It increases sugar cravings</option>
+                    <option value="correct">It helps improve energy and focus</option>
+                    <option value="wrong">It decreases metabolism</option>
+                </select>
+                <p id="quizFeedback" aria-live="polite"></p>
+                <button type="submit">Check Answer</button>
+            </form>
+        </section>
+
+        <!--contact-->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you're ready to begin or just want to ask something, drop us your name and email. We'll reply soon.</p>
+
+            <form id="contactForm">
+                <label for="name">Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" required>
+
+                <p id="formFeedback" aria-live="polite"></p>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <p>&copy;All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
